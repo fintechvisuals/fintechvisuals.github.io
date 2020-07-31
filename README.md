@@ -1,1 +1,0 @@
-# fintechvisuals.github.io
