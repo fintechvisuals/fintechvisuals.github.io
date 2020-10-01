@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>FV Keyboard Execution - Fintech Visuals</title>
+  <title>FV Keyboard - Fintech Visuals</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "FV Keyboard Execution";
+    var mkdocs_page_name = "FV Keyboard";
     var mkdocs_page_input_path = "kb-exec.md";
     var mkdocs_page_url = null;
   </script>
@@ -52,8 +52,14 @@
                     </li>
                 </ul>
                 <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">FV Keyboard Execution</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">FV Keyboard</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#pro-version">PRO Version</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#thin-version">THIN Version</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#how-to-set-a-key">How to set a key</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -78,7 +84,7 @@
     
       
     
-    <li>FV Keyboard Execution</li>
+    <li>FV Keyboard</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -89,9 +95,31 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="fv-keyboard-execution">FV Keyboard Execution</h1>
+                <h1 id="fv-keyboard">FV Keyboard</h1>
+<p>User assignable keyboard shortcuts for quick execution using Bookmap</p>
+<h2 id="pro-version">PRO Version</h2>
+<p>This package was designed to provide traders with execution commonly offered on other platforms, including client requests along with adding some of the more advanced features as seen on professional execution platforms.</p>
+<p>Currently this addon is only supported if you are FLAT before loading it.</p>
+<p><strong>Reset To Limit:</strong> when the Bookmap Bracket setting is used and this feature is selected. When a fill for the pending order is detected the Bracket orders will be placed and then will be automatically disabled on Bookmap's trading panel.
+This is for those times when a trader may want to scale out/into position using limit orders without sending a new Bracket and offset prices.</p>
+<p><strong>Update Child Orders:</strong>  enabled the auto update of the child orders quantity of the already pending bracket orders.(used if traders always want a stop and target for each filled order). This setting will offset the bracket orders if you scale out your position.</p>
+<p><strong>Breakeven Enabled:</strong>  enable a function that will automatically move the stop to breakeven.</p>
+<p><strong>Breakeven ticks:</strong> this will use the detected fill price and move the stop only when the fill price +/- X ticks becomes the best bid or offer.</p>
+<p><strong>Move Breakeven +:</strong> this will set the stop  + X ticks from the fill price detected.</p>
+<p><strong>Resize Order Qty:</strong> This will reset the default order quantity back to the user default setting after an increase/decrease to the default order size. (Used as a default reset when a trader wishes to temporarily increase order entry/exit size)</p>
+<p><strong>Resize Qty Value:</strong> this will set the default user defined order size to be used upon the reset.</p>
+<p><strong>Move Targets:</strong> used to enable the function that will allow the KB to be used to move the target order away from or closer to the initial fill price.</p>
+<p><strong>Move Away ticks:</strong> this is the qty of X ticks at which the target will move away from the initial fill price each time the key is hit.</p>
+<p><strong>Move Close Ticks:</strong> this is the qty of X ticks at which the target will move closer to the initial fill price each time the key is hit.</p>
+<p><strong>Move Stops:</strong> used to enable the function that will allow the KB to be used to move the stop order away from or closer to the initial fill price.</p>
+<p><strong>Move Stp Away ticks:</strong> this is the qty of X ticks at which the stop will move away from the initial fill price each time the key is hit.</p>
+<p><strong>Move Stp Close Ticks:</strong> this is the qty of X ticks at which the stop will move closer to the initial fill price each time the key is hit.</p>
+<p><strong>Theoretical Price Settings:</strong> This will calculate the initial open order fill price +/- any profit or loss and plot a line where the b/e price on the open trade is.</p>
+<p><img alt="Screenshot" src="../images/fv-kb-pro-menu.png" /></p>
+<h2 id="thin-version">THIN Version</h2>
 <p>User assignable keyboard shortcuts for quick execution using Bookmap’s Trading Control Panel functions.</p>
-<h1 id="how-to-set-a-key">How to set a key</h1>
+<p><img alt="Screenshot" src="../images/130-KB-exec.jpg" /></p>
+<h2 id="how-to-set-a-key">How to set a key</h2>
 <p>1) Load the addon .jar file on Bookmap</p>
 <p><img alt="Screenshot" src="../images/kbsteps/kb1.png" /></p>
 <p>2)  Open the key map settings and setup your keys/shortcuts</p>
